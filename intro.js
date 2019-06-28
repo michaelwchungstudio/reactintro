@@ -15,5 +15,54 @@ function Person(props) {
 
 // Rendering the example component:
 // Render the Person component in the div with id:p1
-ReactDOM.render(<Person name='Michael' age='26'/>, document.querySelector('#p1');
-ReactDOM.render(<Person name='Caroline' age='24'/>, document.querySelector('#p2');
+ReactDOM.render(<Person name='Michael' age='26'/>, document.querySelector('#p1'));
+ReactDOM.render(<Person name='Caroline' age='25'/>, document.querySelector('#p2'));
+
+// More popular method:
+var app = (
+  <div>
+    <Person name='Michael' age='26'/>
+    <Person name='Caroline' age='25'/>
+  </div>
+);
+
+ReactDOM.render(app, document.querySelector('#people'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
