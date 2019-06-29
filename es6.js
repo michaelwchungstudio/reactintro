@@ -33,3 +33,58 @@ import * as bundled from './utility.js'
 ex. bundled.baseData, bundled.clean
 
 // * Classes
+// Person class inherits properties and methods from Human
+// Remember the super() if using a constructor in the extending class!
+class Human {
+  constructor() {
+    this.gender = 'female';
+  }
+}
+
+class Person extends Human {
+  constructor() {
+    super();
+    this.name = 'Mike';
+    this.gender = 'male';
+  }
+
+  printMyName() {
+    console.log(this.name);
+  }
+}
+
+const person = new Person();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
