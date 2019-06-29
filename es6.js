@@ -107,8 +107,12 @@ const secondPerson = {
   ...person
 }
 
+// * Array Functions
+// map, reduce, filter, etc.
+// create a new array following the parameters/function described
+const numbers = [1, 2, 3];
 
-
+const doubleNumArray = numbers.map(num => num * 2);
 
 
 
