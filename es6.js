@@ -87,8 +87,25 @@ Object Destructuring
 console.log(name) // Michael
 console.log(age) // undefined
 
+// * Reference & Primitive Types
+Primitive types
+// numbers, strings, booleans -> reassignment will COPY the value
+const num1 = 1;
+const num2 = num2;
 
+Reference types
+// objects, arrays -> reassignment utilizes a POINTER to the original
+// ex. changing person below will affect secondPerson
+const person = {
+  name: 'Michael'
+}
 
+const secondPerson = person;
+
+// below will COPY using spread operators!
+const secondPerson = {
+  ...person
+}
 
 
 
