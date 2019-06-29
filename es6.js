@@ -1,4 +1,4 @@
-// ES6 JavaScript
+// ES6/ES7 JavaScript
 
 // * let & const
 let - variable values, similar to var
@@ -39,25 +39,53 @@ class Human {
   constructor() {
     this.gender = 'female';
   }
+
+  printGender() {
+    console.log(this.gender);
+  }
 }
 
 class Person extends Human {
-  constructor() {
-    super();
-    this.name = 'Mike';
-    this.gender = 'male';
-  }
+  name = 'Michael';
+  gender = 'male';
 
-  printMyName() {
+  printMyName = () => {
     console.log(this.name);
   }
 }
 
 const person = new Person();
 
+// * Spread & Rest Operators
+Spread - used to split up array elements OR object properties
+const newArray = [...oldArray, 1, 2]
+const newObject = {...oldObject, newProp: 5}
 
+Rest - used to merge a list of function arguments into an array
+// unlimited arguments that will be merged into an array that can be used in the function
+function sortArts(...args) {
+  return args.sort()
+}
 
+const filter = (...args) => {
+  return args.filter(el => el === 1);
+}
 
+// * Destructuring
+// extract array elements or object properties and store them in variables
+Array Destructuring
+[a, b] = ['Hello', 'Michael']
+console.log(a) // Hello
+console.log(b) // Michael
+
+const numbers = [1, 2, 3]
+[num1, , num3] = numbers;
+console.log(num1, num3); // 1, 3
+
+Object Destructuring
+{name} = {name: 'Michael', age: 26}
+console.log(name) // Michael
+console.log(age) // undefined
 
 
 
