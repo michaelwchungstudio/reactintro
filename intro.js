@@ -1,5 +1,10 @@
 // React (v. 16.8.6)- Getting Started
 
+// Why React?
+// UI State becomes difficult to handle with Vanilla JavaScript
+
+// Alternatives: Angular, Vue, Backbone, Ember
+
 // React Library - for building components
 // ReactDOM Library - for connecting components to the DOM
 
